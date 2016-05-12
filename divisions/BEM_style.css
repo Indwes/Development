@@ -1,0 +1,456 @@
+.undergraduate .navbar-default ul.nav > li.active > a:not(.btn), .undergraduate > .navbar-default ul.nav > li > a:hover:not(.btn) {
+  background-image: none;
+  box-shadow: none;
+  display: block;
+  vertical-align: text-bottom;
+  color: #ffffff;
+  padding-top: 55px; }
+
+.undergraduate .navbar-quicklinks ul.dropdown-menu:hover, .undergraduate .navbar-quicklinks a.dropdown-toggle:hover + .dropdown-menu {
+  display: block;
+  transition: 1s;
+  transition-delay: 2s; }
+
+.item > img, .item > .jumbotron {
+  min-height: 100%;
+  margin: auto;
+  background-color: #eeeeee; }
+
+.carousel-caption h1, .carousel-caption p {
+  padding: 0;
+  margin: 0;
+  line-height: .9em; }
+
+body {
+  font-family: proxima-nova, Arial;
+  font-size: 16px; }
+
+.undergraduate .navbar-default {
+  background-color: #ffffff !important;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  z-index: 3; }
+  .undergraduate .navbar-default ul li {
+    position: static; }
+    .undergraduate .navbar-default ul li > a:hover {
+      background-color: #e5e6e6;
+      color: #7d7d7d; }
+      .undergraduate .navbar-default ul li > a:hover:not(.btn) {
+        text-decoration: none;
+        color: #ffffff;
+        transition: .5s;
+        background-image: none; }
+    .undergraduate .navbar-default ul li > a:not(.btn) {
+      color: #7e8083;
+      text-decoration: none;
+      padding: inherit 1em;
+      position: relative;
+      bottom: 0;
+      text-transform: uppercase;
+      font-family: proxima-nova-extrabold, proxima-nova, Arial;
+      font-weight: bold;
+      transition: .75s; }
+    .undergraduate .navbar-default ul li.active {
+      display: block;
+      height: 100%; }
+      .undergraduate .navbar-default ul li.active > a {
+        background-color: #e5e6e6;
+        color: #7d7d7d; }
+        .undergraduate .navbar-default ul li.active > a:hover:not(.btn) {
+          color: #ffffff;
+          text-decoration: underline; }
+    .undergraduate .navbar-default ul li.Majors.active a {
+      background-color: #b42e34; }
+    .undergraduate .navbar-default ul li.Majors a:hover {
+      background-color: #b42e34; }
+    .undergraduate .navbar-default ul li.Admissions.active > a {
+      background-color: #b42e34; }
+    .undergraduate .navbar-default ul li.Admissions > a:hover {
+      background-color: #b42e34; }
+    .undergraduate .navbar-default ul li.FinAid.active > a {
+      background-color: #005581; }
+    .undergraduate .navbar-default ul li.FinAid > a:hover {
+      background-color: #005581; }
+    .undergraduate .navbar-default ul li.IWULife.active > a {
+      background-color: #5c8727; }
+    .undergraduate .navbar-default ul li.IWULife > a:hover {
+      background-color: #5c8727; }
+  .undergraduate .navbar-default .navbar-brand img {
+    display: block; }
+.undergraduate .navbar .nav {
+  margin-top: 30px;
+  height: 89px; }
+  .undergraduate .navbar .nav > .nav-divider {
+    border: solid 0 #cccccc;
+    width: 1px;
+    height: 3em;
+    display: block;
+    margin: 0 .5em;
+    content: "\&nbsp"; }
+.undergraduate .navbar .container {
+  position: relative; }
+.undergraduate .dropdown-menu.container {
+  position: absolute; }
+.undergraduate .dropdown-menu ul {
+  margin: 0;
+  padding: 0; }
+  .undergraduate .dropdown-menu ul li a {
+    display: block;
+    padding: .35em .75em;
+    clear: both;
+    line-height: 1.42857143;
+    white-space: nowrap; }
+.undergraduate .dropdown-menu li {
+  list-style-type: none; }
+.undergraduate .dropdown-menu > li.Admissions a:hover {
+  background-color: #b42e34; }
+.undergraduate .navbar-apply {
+  margin-top: 34px;
+  margin-left: 10px; }
+  .undergraduate .navbar-apply a {
+    display: block;
+    text-transform: uppercase;
+    padding: .35em 2em .25em 1em;
+    background-color: #b42e34;
+    border-radius: 3px;
+    text-decoration: none;
+    border-bottom: 6px #9a0323 solid;
+    transition: 1.5s; }
+    .undergraduate .navbar-apply a:hover {
+      color: #ffffff;
+      background: #9a0323;
+      text-decoration: none;
+      border-bottom: 3px #b42e34 solid;
+      box-shadow: inset 0 -5px 0.5em #b42e34;
+      transition: 1.5s; }
+      .undergraduate .navbar-apply a:hover .fa {
+        color: #b42e34 !important; }
+        .undergraduate .navbar-apply a:hover .fa:after {
+          font-family: FontAwesome;
+          content: '\f00c';
+          transition: .5s;
+          color: #ffffff; }
+  .undergraduate .navbar-apply .fa {
+    position: absolute;
+    top: .35em;
+    right: .5em;
+    font-size: 1.15em;
+    transition: 1.5s; }
+    .undergraduate .navbar-apply .fa:after {
+      top: .275em;
+      right: .15em;
+      color: #b42e34;
+      font-size: .65em;
+      position: absolute;
+      content: '\f00c';
+      font-family: FontAwesome; }
+  .undergraduate .navbar-apply:hover span.fa {
+    transform: rotate(-360deg);
+    transition: 1.5s; }
+.undergraduate .navbar-form {
+  margin: 38px 3em 0; }
+  .undergraduate .navbar-form input.form-control {
+    border: none;
+    border-radius: 0 !important;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    line-height: 18px;
+    font-size: 1em;
+    background-color: #e5e6e6;
+    color: #7d7d7d;
+    height: auto;
+    width: 10em; }
+    .undergraduate .navbar-form input.form-control:-moz-placeholder {
+      color: #7d7d7d;
+      opacity: 1; }
+    .undergraduate .navbar-form input.form-control:-ms-input-placeholder {
+      color: #7d7d7d; }
+    .undergraduate .navbar-form input.form-control:placeholder-shown {
+      color: #7d7d7d; }
+  .undergraduate .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #7d7d7d; }
+  .undergraduate .navbar-form input.form-control::-moz-placeholder {
+    color: #7d7d7d;
+    opacity: 1; }
+  .undergraduate .navbar-form button.btn-go {
+    color: #b42e34;
+    background: none;
+    border: none;
+    transition: .5s; }
+    .undergraduate .navbar-form button.btn-go:hover {
+      color: #7d7d7d;
+      transition: .5s;
+      transform: rotate(45deg); }
+.undergraduate .navbar-brand {
+  height: auto;
+  margin-right: 2em; }
+.undergraduate .text-white {
+  color: #ffffff; }
+.undergraduate .corporate {
+  border-radius: 0 0 5px 5px;
+  padding: .25em 0; }
+.undergraduate a.unstyled {
+  text-decoration: none; }
+.undergraduate a:hover.unstyled {
+  color: inherit;
+  text-decoration: underline; }
+.undergraduate .menuUnderlay {
+  opacity: 1;
+  z-index: -1;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: .5s; }
+.undergraduate .navbar-quicklinks {
+  position: absolute;
+  top: 0;
+  right: 16.6%;
+  display: block;
+  width: auto;
+  height: auto; }
+  .undergraduate .navbar-quicklinks ul.nav-quicklinks li.active > a {
+    padding: 0.5em 1em !important;
+    background-color: #b42e34; }
+  .undergraduate .navbar-quicklinks ul.nav-quicklinks li > a:hover {
+    padding: 0.5em 1em !important;
+    background-color: #b42e34;
+    padding: 0.5em 1em !important;
+    background-color: #b42e34; }
+  .undergraduate .navbar-quicklinks .nav.nav-quicklinks {
+    position: relative;
+    height: auto;
+    margin-top: 0; }
+.undergraduate .carousel-indicators {
+  bottom: -40px; }
+  .undergraduate .carousel-indicators li {
+    background-color: #c7cacb;
+    border-color: #ffffff;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px; }
+    .undergraduate .carousel-indicators li.active {
+      background-color: #980826;
+      border-color: #ffffff;
+      height: 10px;
+      width: 10px;
+      border-radius: 10px; }
+.undergraduate li .dropdown-menu > li a:hover {
+  background-color: #e5e6e6;
+  color: #7d7d7d; }
+.undergraduate .Majors .dropdown-menu li a:hover {
+  background-color: #b42e34; }
+.undergraduate .FinAid .dropdown-menu li a:hover {
+  background-color: #005581; }
+.undergraduate .IWULife .dropdown-menu li a:hover {
+  background-color: #5c8727; }
+.undergraduate .overlay .menuUnderlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: block;
+  opacity: .80;
+  background-color: #000000;
+  z-index: 2;
+  transition: .5s; }
+.undergraduate ul.nav.nav-quicklinks li a {
+  padding: 0.5em 1em !important;
+  font-size: 8pt; }
+  .undergraduate ul.nav.nav-quicklinks li a:hover {
+    padding: 0.5em 1em !important;
+    font-size: 8pt; }
+.undergraduate .indwes-footer hr {
+  border-color: #7d7d7d !important;
+  margin: 2em auto 0;
+  text-align: center; }
+.undergraduate .content > .container > .row {
+  margin-bottom: 3em; }
+.undergraduate .content > .container-fluid > .row {
+  margin-bottom: 3em; }
+.undergraduate .dropdown li.dropdown ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  height: 0;
+  transition: all ease-in-out 1s;
+  z-index: -1; }
+.undergraduate .dropdown li.dropdown:hover ul {
+  display: block;
+  height: 100%;
+  opacity: 1;
+  transition: all ease-in-out .5s;
+  z-index: 10; }
+
+.carousel-control {
+  opacity: 0;
+  cursor: pointer; }
+  .carousel-control.left {
+    background-image: none; }
+  .carousel-control.right {
+    background-image: none; }
+
+.carousel-caption {
+  text-align: left;
+  padding: 7px 20px;
+  line-height: 1em;
+  border-left: 7px solid #ffffff; }
+  .carousel-caption.light {
+    border-left: 7px solid #eeeeee;
+    color: #eeeeee; }
+  .carousel-caption.dark {
+    border-left: 7px solid #666;
+    color: #666;
+    text-shadow: none; }
+  .carousel-caption.info {
+    color: #005581;
+    border-color: #005581;
+    text-shadow: none; }
+  .carousel-caption.academics {
+    color: #b42e34;
+    border-color: #b42e34; }
+
+.majors {
+  margin: auto;
+  float: none;
+  width: auto; }
+  .majors .majors__list {
+    display: block;
+    max-width: 870px;
+    margin: auto;
+    padding: 0; }
+    .majors .majors__list .majors__major {
+      height: 250px;
+      width: 250px;
+      background-color: #b42e34;
+      border-radius: 4px;
+      color: #ffffff;
+      list-style: none;
+      margin: 20px;
+      display: block;
+      float: left;
+      position: relative;
+      overflow: hidden; }
+      .majors .majors__list .majors__major .majors__caption {
+        color: #ffffff;
+        text-align: center;
+        position: absolute;
+        border-radius: 4px;
+        bottom: 0;
+        padding: 14px;
+        background: rgba(0, 0, 0, 0.4);
+        display: block;
+        width: 250px;
+        height: 50px; }
+
+.navbar ul.nav:not(.dropdown) > li > a:hover {
+  padding-top: 55px; }
+
+.carousel .item {
+  margin-bottom: 0;
+  max-height: 400px;
+  background-color: #ffffff; }
+
+.carousel-inner {
+  margin-bottom: 1.5em; }
+
+.container {
+  margin-top: 80px; }
+
+.hero-vid {
+  height: 500px;
+  overflow: hidden;
+  margin: 50px 0;
+  padding: 0;
+  position: relative; }
+  .hero-vid__video {
+    min-width: 100%;
+    min-height: 100%; }
+  .hero-vid__overlay {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4); }
+
+.news {
+  border-right: 1px solid lightgrey; }
+  .news__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .news__item {
+    display: inline-block;
+    width: 49%; }
+  .news__img {
+    width: 300px;
+    border-radius: 4px; }
+  .news__title {
+    font-size: 1.5em;
+    max-width: 280px;
+    margin: 10px 0 10px 10px;
+    line-height: 1.15em;
+    color: #acacac; }
+  .news__teaser {
+    max-width: 280px;
+    margin-left: 10px;
+    color: #acacac;
+    font-size: 1em; }
+
+.events__event {
+  margin-top: 10px; }
+.events__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.events__title {
+  margin-top: 15px;
+  color: #acacac;
+  font-size: 1.2em; }
+.events__time {
+  color: #acacac;
+  font-size: 1.2em; }
+.events__date {
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #be3439;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: proxima-nova; }
+.events__day {
+  text-align: center;
+  font-size: 3em;
+  line-height: .8em;
+  margin-top: 12px; }
+.events__month {
+  text-align: center;
+  font-size: 1.3em; }
+.events__link {
+  display: inline-block;
+  width: 100%; }
+
+.careers__list {
+  list-style-type: none; }
+.careers__career {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.3em; }
+.careers__link {
+  text-decoration: none;
+  color: #7e8083; }
+
+h2 {
+  margin-bottom: 30px;
+  color: #7e8083; }
+
+/*# sourceMappingURL=BEM_style.css.map */
