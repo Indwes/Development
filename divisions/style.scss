@@ -16,6 +16,7 @@ $color_pumice_approx: #c7cacb;
 $color_paprika_approx: #980826;
 $color_gallery_approx: #eeeeee;
 $color_storm_dust_approx: #666;
+$color_lightblue: #0194d3;
 $black_40: rgba(0,0,0, .4);
 
 //fonts
@@ -782,6 +783,7 @@ body {
 
 	@at-root #{&}__wrapper {
 		background-color: #ebebeb;
+		margin: 80px 0;
 	}
 	@at-root #{&}__info {
 		padding-top: 50px;
@@ -799,6 +801,19 @@ body {
 		background-color: #d6d7d8;
 		height: 300px;
 		padding-top: 50px;
+		text-align: center;
+	}
+	@at-root #{&}__button {
+		background-color: $color_lightblue;
+		color: $white;
+		border-radius: 4px;
+		border: none;
+		line-height: 1.8em;
+		margin-top: 20px;
+	}
+	@at-root #{&}__social {
+		padding-top: 30px;
+
 	}
 }
 
@@ -815,6 +830,10 @@ body {
 		margin: 0;
 
 	}
+	@at-root #{&}__link {
+		text-decoration: none;
+		color: $color_gray_approx;
+	}
 	@at-root #{&}__logo {
 		margin: 0 auto;
 		display: block;
@@ -827,9 +846,13 @@ body {
 		text-align: right;
 		margin-top: 55px;
 	}
-	@at-root #{&}__row {
+	@at-root #{&}__main {
 		padding-bottom: 10px;
 		border-bottom: 1px solid grey;
+	}
+	@at-root #{&}__copyright {
+		text-align: center;
+		margin-top: 20px;
 	}
 
 }
@@ -839,7 +862,9 @@ h2 {
 	color: $color_gray_approx;
 }
 
-
+h3 {
+	color: $color_gray_approx;
+}
 
 
 
