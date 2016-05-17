@@ -72,9 +72,9 @@ body {
     .undergraduate .navbar-default ul li.Admissions > a:hover {
       background-color: #b42e34; }
     .undergraduate .navbar-default ul li.FinAid.active > a {
-      background-color: #005581; }
+      background-color: #0194d3; }
     .undergraduate .navbar-default ul li.FinAid > a:hover {
-      background-color: #005581; }
+      background-color: #0194d3; }
     .undergraduate .navbar-default ul li.IWULife.active > a {
       background-color: #5c8727; }
     .undergraduate .navbar-default ul li.IWULife > a:hover {
@@ -119,7 +119,8 @@ body {
     border-radius: 3px;
     text-decoration: none;
     border-bottom: 6px #9a0323 solid;
-    transition: 1.5s; }
+    transition: 1.5s;
+    color: #ffffff; }
     .undergraduate .navbar-apply a:hover {
       color: #ffffff;
       background: #9a0323;
@@ -188,11 +189,16 @@ body {
 .undergraduate .navbar-brand {
   height: auto;
   margin-right: 2em; }
-.undergraduate .text-white {
-  color: #ffffff; }
 .undergraduate .corporate {
   border-radius: 0 0 5px 5px;
-  padding: .25em 0; }
+  padding: .25em 0;
+  background-color: #b42e34;
+  text-align: Center; }
+  .undergraduate .corporate a {
+    color: #ffffff; }
+  .undergraduate .corporate:hover {
+    text-decoration: unerline;
+    color: #eeeeee; }
 .undergraduate a.unstyled {
   text-decoration: none; }
 .undergraduate a:hover.unstyled {
@@ -245,7 +251,7 @@ body {
 .undergraduate .Majors .dropdown-menu li a:hover {
   background-color: #b42e34; }
 .undergraduate .FinAid .dropdown-menu li a:hover {
-  background-color: #005581; }
+  background-color: #0194d3; }
 .undergraduate .IWULife .dropdown-menu li a:hover {
   background-color: #5c8727; }
 .undergraduate .opaque--light .menuUnderlay {
@@ -314,8 +320,8 @@ body {
     color: #464646;
     text-shadow: none; }
   .carousel-caption.info {
-    color: #005581;
-    border-color: #005581;
+    color: #0194d3;
+    border-color: #0194d3;
     text-shadow: none; }
   .carousel-caption.academics {
     color: #b42e34;
