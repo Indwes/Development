@@ -226,12 +226,21 @@
 	</div>
 </div><!-- End Container -->
 
-<div class="hero-vid container-fluid">
+
+
+<div class="videoWrapper wideScreen">
+	<iframe width="854" height="480" src="https://www.youtube.com/embed/bsDIUE4q6ls" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<!-- <div class="hero-vid container-fluid">
 	<video class="hero-vid__video" loop autoplay preload="auto" poster="">
 		<source src="video/video.mp4" type="video/mp4" />
 	</video>
+	<div class="hero-vid__play"></div>
 	<div class="hero-vid__overlay"></div>
-</div><!-- End Hero Video -->
+</div> -->
+<!-- End Hero Video -->
 
 <div class="container">
 
@@ -489,14 +498,14 @@
 
 			<div class="col-md-2">
 				
-				<ul class="footer__links">
-					<li><a href="#" class="footer__link">Some Link</a></li>
-					<li><a href="#" class="footer__link">Some Link</a></li>
-					<li><a href="#" class="footer__link">Some Link</a></li>
-					<li><a href="#" class="footer__link">Some Link</a></li>
-					<li><a href="#" class="footer__link">Some Link</a></li>
-					<li><a href="#" class="footer__link">Some Link</a></li>
-					<li><a href="#" class="footer__link">Some Link</a></li>					
+				<ul class="footer__list">
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Some Link</a></li>					
 				</ul>
 				
 			</div>
@@ -527,8 +536,7 @@
 		&copy; 2016 Indiana Wesleyan University
 	</div>
 </footer>
-
-<script> 
+<script>
 $('.faculty__grid').isotope({
   // options
   itemSelector: '.faculty__profile',
@@ -538,6 +546,16 @@ $('.faculty__grid').isotope({
   },
   percentPosition: true
 });
+
+// $('.hero-vid__play').click(function(){
+
+// 	var video = $(this).prev().get(0);
+// 	console.log(video);
+
+// 	video.paused?video.play():video.pause();
+
+// });
+
 </script>
 
 </body>
