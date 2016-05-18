@@ -37,7 +37,7 @@ body {
   .undergraduate .navbar-default ul li {
     position: static; }
     .undergraduate .navbar-default ul li > a:hover {
-      background-color: #e5e6e6;
+      background-color: #eeeeee;
       color: #7d7d7d; }
       .undergraduate .navbar-default ul li > a:hover:not(.btn) {
         text-decoration: none;
@@ -45,7 +45,7 @@ body {
         transition: .5s;
         background-image: none; }
     .undergraduate .navbar-default ul li > a:not(.btn) {
-      color: #7e8083;
+      color: #7d7d7d;
       text-decoration: none;
       padding: inherit 1em;
       position: relative;
@@ -58,7 +58,7 @@ body {
       display: block;
       height: 100%; }
       .undergraduate .navbar-default ul li.active > a {
-        background-color: #e5e6e6;
+        background-color: #eeeeee;
         color: #7d7d7d; }
         .undergraduate .navbar-default ul li.active > a:hover:not(.btn) {
           color: #ffffff;
@@ -160,7 +160,7 @@ body {
     padding-bottom: .25em;
     line-height: 18px;
     font-size: 1em;
-    background-color: #e5e6e6;
+    background-color: #eeeeee;
     color: #7d7d7d;
     height: auto;
     width: 10em; }
@@ -228,19 +228,19 @@ body {
 .undergraduate .carousel-indicators {
   bottom: -40px; }
   .undergraduate .carousel-indicators li {
-    background-color: #c7cacb;
+    background-color: #7d7d7d;
     border-color: #ffffff;
     height: 8px;
     width: 8px;
     border-radius: 8px; }
     .undergraduate .carousel-indicators li.active {
-      background-color: #980826;
+      background-color: #9a0323;
       border-color: #ffffff;
       height: 10px;
       width: 10px;
       border-radius: 10px; }
 .undergraduate li .dropdown-menu > li a:hover {
-  background-color: #e5e6e6;
+  background-color: #eeeeee;
   color: #7d7d7d; }
 .undergraduate .Majors .dropdown-menu li a:hover {
   background-color: #b42e34; }
@@ -248,7 +248,7 @@ body {
   background-color: #005581; }
 .undergraduate .IWULife .dropdown-menu li a:hover {
   background-color: #5c8727; }
-.undergraduate .overlay .menuUnderlay {
+.undergraduate .opaque--light .menuUnderlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -310,8 +310,8 @@ body {
     border-left: 7px solid #eeeeee;
     color: #eeeeee; }
   .carousel-caption.dark {
-    border-left: 7px solid #666;
-    color: #666;
+    border-left: 7px solid #464646;
+    color: #464646;
     text-shadow: none; }
   .carousel-caption.info {
     color: #005581;
@@ -385,7 +385,7 @@ body {
     height: 50px; }
     @media screen and (max-width: 764px) {
       .majors__caption {
-        color: #7e8083;
+        color: #7d7d7d;
         position: relative;
         background: none;
         height: auto;
@@ -527,7 +527,7 @@ body {
       width: 49%; } }
 .careers__link {
   text-decoration: none;
-  color: #7e8083; }
+  color: #7d7d7d; }
 
 .faculty__grid {
   margin: 0 auto; }
@@ -601,7 +601,7 @@ body {
 .footer {
   border-top: 1px solid grey;
   padding: 40px 60px;
-  color: #7e8083;
+  color: #7d7d7d;
   font-size: .8em; }
   .footer__list {
     list-style-type: none;
@@ -614,7 +614,7 @@ body {
       text-align: center; } }
   .footer__link {
     text-decoration: none;
-    color: #7e8083; }
+    color: #7d7d7d; }
     @media screen and (max-width: 991px) {
       .footer__link {
         text-align: center; } }
@@ -644,10 +644,10 @@ body {
 
 h2 {
   margin-bottom: 30px;
-  color: #7e8083; }
+  color: #7d7d7d; }
 
 h3 {
-  color: #7e8083; }
+  color: #7d7d7d; }
 
 a {
   text-decoration: none; }
