@@ -89,7 +89,7 @@ body {
 							background-image: none;
 						}
 					}
-					&:not(.btn) {
+					 &:not(.btn) {
 						color: $gray;
 						text-decoration: none;
 						padding: inherit 1em;
@@ -102,7 +102,7 @@ body {
 						transition: .75s;
 					}
 				}
-				&.active {
+				&.active, &.open {
 					display: block;
 					height: 100%;
 					> a {
@@ -115,7 +115,7 @@ body {
 					}
 				}
 				&.Majors {
-					&.active a {
+					&.open > a, &.active > a {
 						background-color: $IWU_UG_Red;
 					}
 					a:hover {
@@ -147,7 +147,7 @@ body {
 					}
 				}
 			}
-			&.nav > li.active > a:not(.btn) {
+			&.nav > li.active > a:not(.btn),&.nav > li.open > a:not(.btn) {
 				@extend %extend_1;
 			}
 		}
@@ -171,6 +171,7 @@ body {
 		.container {
 			position: relative;
 		}
+		margin-top:2em;
 	}
 	.dropdown-menu {
 		&.container {
@@ -307,20 +308,66 @@ body {
 		height: auto;
 		margin-right: 2em;
 	}
-	.corporate {
-		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-		border-radius: 0 0 5px 5px;
-		padding: .25em 0;
-		background-color: $IWU_UG_Red;
-		text-align: Center;
-		a{
-			color: $white;
+.corporate-nav{
+	a{
+			display: block;
+			width:100%;
+			height: 100%;
 		}
+	@at-root #{&}__corporate {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		//order-radius: 0 0 5px 5px;
+		height:30px;
+		line-height: 30px;
+		padding:0;
+		background-color: $IWU_Red;
+		text-align: Center;
+		font-size:14px;
+		a{
 		&:hover{
 			text-decoration: unerline;
 			color: $white--dark;
 		}
+		color: $white;
+		
 	}
+	}
+		@at-root #{&}__res, #{&}__nres{
+		height:30px;
+		line-height: 30px;
+		font-size:10px;
+		text-align: center;	
+		padding:  0;
+		&:hover{
+			background-color: $gray;
+			a{
+				color: $white;
+			}
+		}
+		a{
+		color: $IWU_UG_Red;
+		}
+		}
+		@at-root #{&}__res{
+			&:hover{
+				background-color: $IWU_UG_Red;
+			}
+		}
+		@at-root #{&}__nres{
+			&:hover{
+			background-color: $IWU_Blue;
+		}
+		}
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1;
+	background-color: transparent;
+	border-bottom: solid 2px $white--dark;
+	overflow:hidden;
+	margin-bottom:0;
+}
 	a {
 		&.unstyled {
 			text-decoration: none;
@@ -343,6 +390,7 @@ body {
 	.navbar-quicklinks {
 		position: absolute;
 		top: 0;
+		margin-top:-2em;
 		right: 16.6%;
 		display: block;
 		width: auto;

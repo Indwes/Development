@@ -1,4 +1,4 @@
-.undergraduate .navbar-default ul.nav > li.active > a:not(.btn), .undergraduate > .navbar-default ul.nav > li > a:hover:not(.btn) {
+.undergraduate .navbar-default ul.nav > li.active > a:not(.btn), .undergraduate .navbar-default ul.nav > li.open > a:not(.btn), .undergraduate > .navbar-default ul.nav > li > a:hover:not(.btn) {
   background-image: none;
   box-shadow: none;
   display: block;
@@ -54,16 +54,16 @@ body {
       font-family: proxima-nova-extrabold, proxima-nova, Arial;
       font-weight: bold;
       transition: .75s; }
-    .undergraduate .navbar-default ul li.active {
+    .undergraduate .navbar-default ul li.active, .undergraduate .navbar-default ul li.open {
       display: block;
       height: 100%; }
-      .undergraduate .navbar-default ul li.active > a {
+      .undergraduate .navbar-default ul li.active > a, .undergraduate .navbar-default ul li.open > a {
         background-color: #eeeeee;
         color: #7d7d7d; }
-        .undergraduate .navbar-default ul li.active > a:hover:not(.btn) {
+        .undergraduate .navbar-default ul li.active > a:hover:not(.btn), .undergraduate .navbar-default ul li.open > a:hover:not(.btn) {
           color: #ffffff;
           text-decoration: underline; }
-    .undergraduate .navbar-default ul li.Majors.active a {
+    .undergraduate .navbar-default ul li.Majors.open > a, .undergraduate .navbar-default ul li.Majors.active > a {
       background-color: #b42e34; }
     .undergraduate .navbar-default ul li.Majors a:hover {
       background-color: #b42e34; }
@@ -81,18 +81,20 @@ body {
       background-color: #5c8727; }
   .undergraduate .navbar-default .navbar-brand img {
     display: block; }
-.undergraduate .navbar .nav {
-  margin-top: 30px;
-  height: 89px; }
-  .undergraduate .navbar .nav > .nav-divider {
-    border: solid 0 #cccccc;
-    width: 1px;
-    height: 3em;
-    display: block;
-    margin: 0 .5em;
-    content: "\&nbsp"; }
-.undergraduate .navbar .container {
-  position: relative; }
+.undergraduate .navbar {
+  margin-top: 2em; }
+  .undergraduate .navbar .nav {
+    margin-top: 30px;
+    height: 89px; }
+    .undergraduate .navbar .nav > .nav-divider {
+      border: solid 0 #cccccc;
+      width: 1px;
+      height: 3em;
+      display: block;
+      margin: 0 .5em;
+      content: "\&nbsp"; }
+  .undergraduate .navbar .container {
+    position: relative; }
 .undergraduate .dropdown-menu.container {
   position: absolute; }
 .undergraduate .dropdown-menu ul {
@@ -189,16 +191,48 @@ body {
 .undergraduate .navbar-brand {
   height: auto;
   margin-right: 2em; }
-.undergraduate .corporate {
-  border-radius: 0 0 5px 5px;
-  padding: .25em 0;
-  background-color: #b42e34;
-  text-align: Center; }
-  .undergraduate .corporate a {
-    color: #ffffff; }
-  .undergraduate .corporate:hover {
-    text-decoration: unerline;
-    color: #eeeeee; }
+.undergraduate .corporate-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: solid 2px #eeeeee;
+  overflow: hidden;
+  margin-bottom: 0; }
+  .undergraduate .corporate-nav a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .undergraduate .corporate-nav__corporate {
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    background-color: #9a0323;
+    text-align: Center;
+    font-size: 14px; }
+    .undergraduate .corporate-nav__corporate a {
+      color: #ffffff; }
+      .undergraduate .corporate-nav__corporate a:hover {
+        text-decoration: unerline;
+        color: #eeeeee; }
+  .undergraduate .corporate-nav__res, .undergraduate .corporate-nav__nres {
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 0; }
+    .undergraduate .corporate-nav__res:hover, .undergraduate .corporate-nav__nres:hover {
+      background-color: #7d7d7d; }
+      .undergraduate .corporate-nav__res:hover a, .undergraduate .corporate-nav__nres:hover a {
+        color: #ffffff; }
+    .undergraduate .corporate-nav__res a, .undergraduate .corporate-nav__nres a {
+      color: #b42e34; }
+  .undergraduate .corporate-nav__res:hover {
+    background-color: #b42e34; }
+  .undergraduate .corporate-nav__nres:hover {
+    background-color: #005581; }
 .undergraduate a.unstyled {
   text-decoration: none; }
 .undergraduate a:hover.unstyled {
@@ -215,6 +249,7 @@ body {
 .undergraduate .navbar-quicklinks {
   position: absolute;
   top: 0;
+  margin-top: -2em;
   right: 16.6%;
   display: block;
   width: auto;
