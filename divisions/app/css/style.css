@@ -1,4 +1,4 @@
-.undergraduate .navbar-default ul.nav > li.active > a:not(.btn), .undergraduate > .navbar-default ul.nav > li > a:hover:not(.btn) {
+.undergraduate .navbar-default ul.nav > li.active > a:not(.btn), .undergraduate .navbar-default ul.nav > li.open > a:not(.btn), .undergraduate > .navbar-default ul.nav > li > a:hover:not(.btn) {
   background-image: none;
   box-shadow: none;
   display: block;
@@ -37,7 +37,7 @@ body {
   .undergraduate .navbar-default ul li {
     position: static; }
     .undergraduate .navbar-default ul li > a:hover {
-      background-color: #e5e6e6;
+      background-color: #eeeeee;
       color: #7d7d7d; }
       .undergraduate .navbar-default ul li > a:hover:not(.btn) {
         text-decoration: none;
@@ -45,7 +45,7 @@ body {
         transition: .5s;
         background-image: none; }
     .undergraduate .navbar-default ul li > a:not(.btn) {
-      color: #7e8083;
+      color: #7d7d7d;
       text-decoration: none;
       padding: inherit 1em;
       position: relative;
@@ -54,16 +54,16 @@ body {
       font-family: proxima-nova-extrabold, proxima-nova, Arial;
       font-weight: bold;
       transition: .75s; }
-    .undergraduate .navbar-default ul li.active {
+    .undergraduate .navbar-default ul li.active, .undergraduate .navbar-default ul li.open {
       display: block;
       height: 100%; }
-      .undergraduate .navbar-default ul li.active > a {
-        background-color: #e5e6e6;
+      .undergraduate .navbar-default ul li.active > a, .undergraduate .navbar-default ul li.open > a {
+        background-color: #eeeeee;
         color: #7d7d7d; }
-        .undergraduate .navbar-default ul li.active > a:hover:not(.btn) {
+        .undergraduate .navbar-default ul li.active > a:hover:not(.btn), .undergraduate .navbar-default ul li.open > a:hover:not(.btn) {
           color: #ffffff;
           text-decoration: underline; }
-    .undergraduate .navbar-default ul li.Majors.active a {
+    .undergraduate .navbar-default ul li.Majors.open > a, .undergraduate .navbar-default ul li.Majors.active > a {
       background-color: #b42e34; }
     .undergraduate .navbar-default ul li.Majors a:hover {
       background-color: #b42e34; }
@@ -72,27 +72,29 @@ body {
     .undergraduate .navbar-default ul li.Admissions > a:hover {
       background-color: #b42e34; }
     .undergraduate .navbar-default ul li.FinAid.active > a {
-      background-color: #005581; }
+      background-color: #0194d3; }
     .undergraduate .navbar-default ul li.FinAid > a:hover {
-      background-color: #005581; }
+      background-color: #0194d3; }
     .undergraduate .navbar-default ul li.IWULife.active > a {
       background-color: #5c8727; }
     .undergraduate .navbar-default ul li.IWULife > a:hover {
       background-color: #5c8727; }
   .undergraduate .navbar-default .navbar-brand img {
     display: block; }
-.undergraduate .navbar .nav {
-  margin-top: 30px;
-  height: 89px; }
-  .undergraduate .navbar .nav > .nav-divider {
-    border: solid 0 #cccccc;
-    width: 1px;
-    height: 3em;
-    display: block;
-    margin: 0 .5em;
-    content: "\&nbsp"; }
-.undergraduate .navbar .container {
-  position: relative; }
+.undergraduate .navbar {
+  margin-top: 2em; }
+  .undergraduate .navbar .nav {
+    margin-top: 30px;
+    height: 89px; }
+    .undergraduate .navbar .nav > .nav-divider {
+      border: solid 0 #cccccc;
+      width: 1px;
+      height: 3em;
+      display: block;
+      margin: 0 .5em;
+      content: "\&nbsp"; }
+  .undergraduate .navbar .container {
+    position: relative; }
 .undergraduate .dropdown-menu.container {
   position: absolute; }
 .undergraduate .dropdown-menu ul {
@@ -119,7 +121,8 @@ body {
     border-radius: 3px;
     text-decoration: none;
     border-bottom: 6px #9a0323 solid;
-    transition: 1.5s; }
+    transition: 1.5s;
+    color: #ffffff; }
     .undergraduate .navbar-apply a:hover {
       color: #ffffff;
       background: #9a0323;
@@ -160,7 +163,7 @@ body {
     padding-bottom: .25em;
     line-height: 18px;
     font-size: 1em;
-    background-color: #e5e6e6;
+    background-color: #eeeeee;
     color: #7d7d7d;
     height: auto;
     width: 10em; }
@@ -188,11 +191,48 @@ body {
 .undergraduate .navbar-brand {
   height: auto;
   margin-right: 2em; }
-.undergraduate .text-white {
-  color: #ffffff; }
-.undergraduate .corporate {
-  border-radius: 0 0 5px 5px;
-  padding: .25em 0; }
+.undergraduate .corporate-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: solid 2px #eeeeee;
+  overflow: hidden;
+  margin-bottom: 0; }
+  .undergraduate .corporate-nav a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .undergraduate .corporate-nav__corporate {
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    background-color: #9a0323;
+    text-align: Center;
+    font-size: 14px; }
+    .undergraduate .corporate-nav__corporate a {
+      color: #ffffff; }
+      .undergraduate .corporate-nav__corporate a:hover {
+        text-decoration: unerline;
+        color: #eeeeee; }
+  .undergraduate .corporate-nav__res, .undergraduate .corporate-nav__nres {
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 0; }
+    .undergraduate .corporate-nav__res:hover, .undergraduate .corporate-nav__nres:hover {
+      background-color: #7d7d7d; }
+      .undergraduate .corporate-nav__res:hover a, .undergraduate .corporate-nav__nres:hover a {
+        color: #ffffff; }
+    .undergraduate .corporate-nav__res a, .undergraduate .corporate-nav__nres a {
+      color: #b42e34; }
+  .undergraduate .corporate-nav__res:hover {
+    background-color: #b42e34; }
+  .undergraduate .corporate-nav__nres:hover {
+    background-color: #005581; }
 .undergraduate a.unstyled {
   text-decoration: none; }
 .undergraduate a:hover.unstyled {
@@ -209,6 +249,7 @@ body {
 .undergraduate .navbar-quicklinks {
   position: absolute;
   top: 0;
+  margin-top: -2em;
   right: 16.6%;
   display: block;
   width: auto;
@@ -228,27 +269,27 @@ body {
 .undergraduate .carousel-indicators {
   bottom: -40px; }
   .undergraduate .carousel-indicators li {
-    background-color: #c7cacb;
+    background-color: #7d7d7d;
     border-color: #ffffff;
     height: 8px;
     width: 8px;
     border-radius: 8px; }
     .undergraduate .carousel-indicators li.active {
-      background-color: #980826;
+      background-color: #9a0323;
       border-color: #ffffff;
       height: 10px;
       width: 10px;
       border-radius: 10px; }
 .undergraduate li .dropdown-menu > li a:hover {
-  background-color: #e5e6e6;
+  background-color: #eeeeee;
   color: #7d7d7d; }
 .undergraduate .Majors .dropdown-menu li a:hover {
   background-color: #b42e34; }
 .undergraduate .FinAid .dropdown-menu li a:hover {
-  background-color: #005581; }
+  background-color: #0194d3; }
 .undergraduate .IWULife .dropdown-menu li a:hover {
   background-color: #5c8727; }
-.undergraduate .overlay .menuUnderlay {
+.undergraduate .opaque--light .menuUnderlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -310,12 +351,12 @@ body {
     border-left: 7px solid #eeeeee;
     color: #eeeeee; }
   .carousel-caption.dark {
-    border-left: 7px solid #666;
-    color: #666;
+    border-left: 7px solid #464646;
+    color: #464646;
     text-shadow: none; }
   .carousel-caption.info {
-    color: #005581;
-    border-color: #005581;
+    color: #0194d3;
+    border-color: #0194d3;
     text-shadow: none; }
   .carousel-caption.academics {
     color: #b42e34;
@@ -385,7 +426,7 @@ body {
     height: 50px; }
     @media screen and (max-width: 764px) {
       .majors__caption {
-        color: #7e8083;
+        color: #7d7d7d;
         position: relative;
         background: none;
         height: auto;
@@ -503,7 +544,7 @@ body {
       width: 49%; } }
 .careers__link {
   text-decoration: none;
-  color: #7e8083; }
+  color: #7d7d7d; }
 
 .faculty__grid {
   margin: 0 auto; }
@@ -577,7 +618,7 @@ body {
 .footer {
   border-top: 1px solid grey;
   padding: 40px 60px;
-  color: #7e8083;
+  color: #7d7d7d;
   font-size: .8em; }
   .footer__links {
     list-style-type: none;
@@ -585,7 +626,7 @@ body {
     margin: 0; }
   .footer__link {
     text-decoration: none;
-    color: #7e8083; }
+    color: #7d7d7d; }
   .footer__logo {
     margin: 0 auto;
     display: block;
@@ -604,10 +645,10 @@ body {
 
 h2 {
   margin-bottom: 30px;
-  color: #7e8083; }
+  color: #7d7d7d; }
 
 h3 {
-  color: #7e8083; }
+  color: #7d7d7d; }
 
 a {
   text-decoration: none; }
