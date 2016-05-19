@@ -5,11 +5,25 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
 
+var minify = require('gulp-minify');
+
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
+    .pipe($.plumber())
+    .pipe($.sourcemaps.init())
+    .pipe($.sass.sync({
+      outputStyle: 'expanded',
+      precision: 10,
+      includePaths: ['.']
+    }).on('error', $.sass.logError))
+    .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('.tmp/styles'))
+    .pipe(reload({stream: true}));
+  return gulp.src('bower_components/bootstrap-sass/**/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
@@ -143,14 +157,36 @@ gulp.task('serve:test', ['scripts'], () => {
   gulp.watch('test/spec/**/*.js').on('change', reload);
   gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
+gulp.task('compress', function() {
+  gulp.src('app/scripts/**/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('app/scripts'))
+  gulp.src('app/css/**/*.css')
+    .pipe(minify({
+        ext:{
+            src:'-debug.css',
+            min:'.css'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.css', '-min.css']
+    }))
+    .pipe(gulp.dest('app/css'))
+});
 
 // inject bower components
 gulp.task('wiredep', () => {
-  gulp.src('app/styles/*.scss')
+  gulp.src('app/css/*.scss')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
     }))
-    .pipe(gulp.dest('app/styles'));
+    .pipe(gulp.dest('app/css'));
 
   gulp.src('app/*.html')
     .pipe(wiredep({

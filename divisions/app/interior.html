@@ -29,19 +29,24 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="undergraduate">
-	<div class="container corporate-nav">
+	<a href="#content" class="sr-only" alt="skip navigation">Skip to content</a>
+	<a href="#mainnav" class="sr-only" alt="skip Institution navigation">Skip to Main Navigation</a>
+	<div class="container corporate-nav" role="navigation" aria-labeledby="corporatenavheading">
+		<h2 class="sr-only" id="corporatenavheading">Institution Navigation</h2>
 		<div class="row">
 			<div class="col-md-2 col-sm-4 col-md-offset-3 col-md-push-2 col-sm-push-4 corporate-nav__corporate"><a href="https://www.indwes.edu/">Indiana Wesleyan University</a></div>
 			<div class="col-md-2 hidden-xs col-sm-4 corporate-nav__nres col-sm-pull-4 col-md-pull-2"><a href="https://www.indwes.edu/Adult-Graduate">Adult Graduate & Online</a></div>
 			<div class="col-md-2 hidden-xs col-sm-4 corporate-nav__res"><a href="https://www.indwes.edu/undergraduate/">Undergraduate</a></div>
 		</div>
 	</div>
-	<nav class="navbar navbar-default">    
+	<nav class="navbar navbar-default" id="mainnav" role="navigation" aria-labeledby="mainnavheading">  
+		<a href="#secondarynavheading" class="sr-only" alt="skipp to section navigation">Skip to section navigation</a>  
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
+				<h2 class="sr-only" id="mainnavheading">Main Navigation</h2>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbarHead"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="https://www.indwes.edu/Residential"><span class="sr-only">Indiana Wesleyan University</span><img src="images/logo.png"  alt="Indiana Wesleyan University"/></a></div>
+				<a class="navbar-brand" href="https://www.indwes.edu/Residential"><span class="sr-only" >Indiana Wesleyan University</span><img src="images/logo.png"  alt="Indiana Wesleyan University"/></a></div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="defaultNavbarHead">
 					<ul class="nav navbar-nav">
@@ -148,16 +153,46 @@
 			</div>
 		</div>
 	</nav>
+	<nav class="secondary-nav" role="navigation" aria-labeledby="secondarynavheading" >
+		<h2 class="sr-only" id="secondarynavheading">[section title] Navigation</h2>
+		<div id="ul" class="secondary-nav"><ul>
+			<li class="secondary-nav__item"><a href="">page 1</a></li>
+			<li class="secondary-nav__item"><a href="">page 2</a></li>
+			<li class="secondary-nav__item"><a href="">page 3</a></li>
+			<li class="secondary-nav__item"><a href="">page 4</a></li>
+			<li class="secondary-nav__item"><a href="">page 5</a></li>
+			<li class="secondary-nav__item"><a href="">Page 1
+				<ul class="secondary-nav__section">
+					<li class="secondary-nav__item"><a href="">sub page 1</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 2</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 3</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 4</a></li>
+				</ul>
+			</a></li>
+			<li class="secondary-nav__item"><a href="">Page 2
+				<ul class="secondary-nav__section">
+					<li class="secondary-nav__item"><a href="">sub page 1</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 2</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 3</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 4</a></li>
+				</ul>
+			</a></li>
+			<li class="secondary-nav__item"><a href="">Page 3
+				<ul class="secondary-nav__section">
+					<li class="secondary-nav__item"><a href="">sub page 1</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 2</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 3</a></li>
+					<li class="secondary-nav__item"><a href="">sub page 4</a></li>
+				</ul>
+			</a></li>
+			<li><a href="">page 1</a></li>
 
-	<div class="container">
+</ul>
+		</div>
+	</nav>
+	<div class="container" role="main" id="content" >
 		<div class="row">
 			<div class="col-sm-12">
-				<button type="button">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<header class="heading">
 					<h1 class="heading__Title">Division of Music</h1>
 					<p class="heading__Sub">subheading</p>
