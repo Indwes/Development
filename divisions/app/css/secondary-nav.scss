@@ -3,23 +3,60 @@
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
+.menu-toggle{
+	.icon-bar{
+		display:block;
+		width:22px;
+		height:2px;
+		background-color: $gray--medium;
+		border-radius:1px;
+		margin:.25em 0;
+	}
+	padding: 8px 10px;
+	margin: 1em auto 0;
+	border-radius:2px;
+	box-shadow: 0px 1px 7px $white--dark;
+	background-color:$white;
+	border:1px solid $white--dark;
+}
+@media screen and (min-width: 1440px){
+@at-root .sticky-nav{
+	left:250px;
+	position:relative;
+	width:calc(100% - 250px)
+	}
+}
 .secondary-nav{
 	display:block;
 	height:100%;
 	width:250px;
-	//padding:0 1em;
-	position:fixed;
-	left:-250px;
 	top:0;
-	color:$gray--dark;
+	color: $gray--dark;
 	background-color:$white;
 	border-right: 2px solid $gray--light;
 	z-index:1000;
+	@extend .transition;
 	overflow-y:scroll;
 	overflow-x:hidden;
-	box-shadow:-15px 0px 75px $gray--dark;
+	box-shadow:0px 0px 75px $gray--dark;
+	border-radius:3px;
+	position:fixed;
+	left:-250px;
 	&.active{
 		left:0;
+	}
+	@media screen and (min-width: 1440px){
+	&.sticky{
+		box-shadow: none;
+		position:absolute;
+		left:-250px;
+		height:100%;
+		border-right:none;
+		overflow:visible;
+		transition:none;
+		-webkit-transition:none;
+		-moz-transition:none;
+	}
 	}
 	>ul{
 		padding:0;
@@ -39,6 +76,9 @@
 				&:hover{
 					background-color:$white;
 					color:$IWU_UG_Blue;
+				}
+				&:last-child{
+					border:none;
 				}
 			}
 		}
@@ -66,5 +106,54 @@
 				padding-left:1em;
 			}
 		}
+	}
+	
+ &.stickey{
+		button{
+			&.pin-menu:after{
+				transform:rotate(0deg);
+			}
+		}
+	}
+
+	@at-root #{&}__options{
+		position:relative;
+		background-color:$IWU_UG_Red;
+		height:40px;
+		button{
+			@extend .btn;
+			display:inline-block;
+			height:40px;
+			width:40px;
+			background-color:transparent;
+			color:$white;
+			font-family:$FontAwesome;
+			overflow:hidden;
+			
+			&.pin-menu{
+				@media screen and (max-width: 1440px){
+				display:none;
+			}
+				position:absolute;
+				left:0;
+				top:0;
+
+				&:after{
+				content:"\f08d";
+				transform:rotate(30deg);
+				display:inline-block;
+			}
+		}
+			&.close-menu{
+				position:absolute;
+				right:0;
+				top:0;
+				&:after{
+				content:"\f00d";
+				display:inline-block;
+			}
+			}
+		}
+
 	}
 }

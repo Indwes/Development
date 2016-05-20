@@ -28,7 +28,7 @@
 	<link href="https://www.indwes.edu/_files/css/Style.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="undergraduate menu-open">
+<body class="undergraduate">
 	<a href="#content" class="sr-only" alt="skip navigation">Skip to content</a>
 	<a href="#mainnav" class="sr-only" alt="skip Institution navigation">Skip to Main Navigation</a>
 	<div class="container corporate-nav" role="navigation" aria-labeledby="corporatenavheading">
@@ -155,10 +155,11 @@
 	</nav>
 	<div class="container" role="main" id="content" >
 		<div class="row">
-		<button class="menu-toggle"><span class="sr-only">Page Navigation</span>
+		
+		<div class="col-xs-1">
+		<button class="menu-toggle"><span class="sr-only">Show page navigation</span>
 		<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 		</button>
-		<div class="col-xs-1">
 		</div>
 			<div class="col-xs-11">			
 				<header class="heading">
@@ -278,9 +279,10 @@
 				</div>
 			</div>
 		</div>
-		<nav class="secondary-nav active" role="navigation" aria-labeledby="secondarynavheading" >
+		</div>
+		<nav class="secondary-nav " role="navigation" aria-labeledby="secondarynavheading" >
 			<h2 class="sr-only" id="secondarynavheading">[section title] Navigation</h2>
-<!--			<div class="secondary-nav__options"><button class="pin">Pin menu open</button><button class="close">close menu</button></div>-->
+<div class="secondary-nav__options"><button class="pin-menu"><span class="sr-only">Pin menu open</span></button><button class="close-menu"><span class="sr-only">close menu</span></button></div>
 			<ul>
 				<li class="secondary-nav__item"><a href="#">page 1</a></li>
 				<li class="secondary-nav__item"><a href="#">page 2</a></li>
@@ -312,12 +314,31 @@
 						<li class="secondary-nav__item"><a href="#">sub page 4</a></li>
 					</ul>
 				</li>
+
 			</ul>
 		</nav>
-	</div>
-		
 	<script type="text/javascript">
-	$
+	$(document).ready(function(){
+		$('.menu-toggle').click(function(){
+			$('.secondary-nav').toggleClass("active");
+
+		});
+
+		$('.secondary-nav__options .close-menu').click(function(){
+			$('.secondary-nav').removeClass("active").removeClass('sticky');
+			$('.undergraduate').removeClass('sticky-nav');
+		});
+		
+		$('.secondary-nav__options .pin-menu').click(function(){
+			$('.secondary-nav').addClass("active").toggleClass("sticky");
+			$('.undergraduate').toggleClass('sticky-nav');
+			
+
+		});
+
+
+
+	});
 
 
 	</script>

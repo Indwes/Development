@@ -18,7 +18,17 @@ body {
 @import 'department-LP-styles';
 @import 'footer';
 @import 'video-wrapper';
-
+.wrapper{
+	position:relative;
+	margin:auto;
+	.container{
+		float:right;
+		width:calc(100% - 250px)
+	}
+	nav{
+		float:left;
+	}
+}
 }
 
 

@@ -1,24 +1,35 @@
 /*
-Error: Undefined variable: "$gray--dark".
-        on line 14 of /Users/administrator/Documents/githubRepos/Indwes/Development/divisions/app/css/secondary-nav.scss
+Error: Undefined variable: "$gray--medium".
+        on line 11 of /Users/administrator/Documents/githubRepos/Indwes/Development/divisions/app/css/secondary-nav.scss
 
-9: 	width:250px;
-10: 	//padding:0 1em;
-11: 	position:fixed;
-12: 	left:-250px;
-13: 	top:0;
-14: 	color:$gray--dark;
-15: 	background-color:$white;
-16: 	border-right: 2px solid $gray--light;
-17: 	z-index:1000;
-18: 	overflow-y:scroll;
-19: 	overflow-x:hidden;
+6: .menu-toggle{
+7: 	.icon-bar{
+8: 		display:block;
+9: 		width:22px;
+10: 		height:2px;
+11: 		background-color: $gray--medium;
+12: 		border-radius:1px;
+13: 		margin:.25em 0;
+14: 	}
+15: 	padding: 8px 10px;
+16: 	margin: 1em auto 0;
 
 Backtrace:
-/Users/administrator/Documents/githubRepos/Indwes/Development/divisions/app/css/secondary-nav.scss:14
+/Users/administrator/Documents/githubRepos/Indwes/Development/divisions/app/css/secondary-nav.scss:11
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray--dark\".\A         on line 14 of /Users/administrator/Documents/githubRepos/Indwes/Development/divisions/app/css/secondary-nav.scss\A \A 9: 	width:250px;\A 10: 	//padding:0 1em;\A 11: 	position:fixed;\A 12: 	left:-250px;\A 13: 	top:0;\A 14: 	color:$gray--dark;\A 15: 	background-color:$white;\A 16: 	border-right: 2px solid $gray--light;\A 17: 	z-index:1000;\A 18: 	overflow-y:scroll;\A 19: 	overflow-x:hidden;"; }
+  content: "Error: Undefined variable: \"$gray--medium\".\A         on line 11 of /Users/administrator/Documents/githubRepos/Indwes/Development/divisions/app/css/secondary-nav.scss\A \A 6: .menu-toggle{\A 7: 	.icon-bar{\A 8: 		display:block;\A 9: 		width:22px;\A 10: 		height:2px;\A 11: 		background-color: $gray--medium;\A 12: 		border-radius:1px;\A 13: 		margin:.25em 0;\A 14: 	}\A 15: 	padding: 8px 10px;\A 16: 	margin: 1em auto 0;"; }
