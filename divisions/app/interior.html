@@ -28,7 +28,7 @@
 	<link href="https://www.indwes.edu/_files/css/Style.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="undergraduate">
+<body class="undergraduate menu-open">
 	<a href="#content" class="sr-only" alt="skip navigation">Skip to content</a>
 	<a href="#mainnav" class="sr-only" alt="skip Institution navigation">Skip to Main Navigation</a>
 	<div class="container corporate-nav" role="navigation" aria-labeledby="corporatenavheading">
@@ -45,7 +45,7 @@
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<h2 class="sr-only" id="mainnavheading">Main Navigation</h2>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbarHead"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbarHead"><span class="sr-only">Toggle Main Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 				<a class="navbar-brand" href="https://www.indwes.edu/Residential"><span class="sr-only" >Indiana Wesleyan University</span><img src="images/logo.png"  alt="Indiana Wesleyan University"/></a></div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="defaultNavbarHead">
@@ -153,46 +153,14 @@
 			</div>
 		</div>
 	</nav>
-	<nav class="secondary-nav" role="navigation" aria-labeledby="secondarynavheading" >
-		<h2 class="sr-only" id="secondarynavheading">[section title] Navigation</h2>
-		<div id="ul" class="secondary-nav"><ul>
-			<li class="secondary-nav__item"><a href="">page 1</a></li>
-			<li class="secondary-nav__item"><a href="">page 2</a></li>
-			<li class="secondary-nav__item"><a href="">page 3</a></li>
-			<li class="secondary-nav__item"><a href="">page 4</a></li>
-			<li class="secondary-nav__item"><a href="">page 5</a></li>
-			<li class="secondary-nav__item"><a href="">Page 1
-				<ul class="secondary-nav__section">
-					<li class="secondary-nav__item"><a href="">sub page 1</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 2</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 3</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 4</a></li>
-				</ul>
-			</a></li>
-			<li class="secondary-nav__item"><a href="">Page 2
-				<ul class="secondary-nav__section">
-					<li class="secondary-nav__item"><a href="">sub page 1</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 2</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 3</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 4</a></li>
-				</ul>
-			</a></li>
-			<li class="secondary-nav__item"><a href="">Page 3
-				<ul class="secondary-nav__section">
-					<li class="secondary-nav__item"><a href="">sub page 1</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 2</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 3</a></li>
-					<li class="secondary-nav__item"><a href="">sub page 4</a></li>
-				</ul>
-			</a></li>
-			<li><a href="">page 1</a></li>
-
-</ul>
-		</div>
-	</nav>
 	<div class="container" role="main" id="content" >
 		<div class="row">
-			<div class="col-sm-12">
+		<button class="menu-toggle"><span class="sr-only">Page Navigation</span>
+		<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+		</button>
+		<div class="col-xs-1">
+		</div>
+			<div class="col-xs-11">			
 				<header class="heading">
 					<h1 class="heading__Title">Division of Music</h1>
 					<p class="heading__Sub">subheading</p>
@@ -310,6 +278,48 @@
 				</div>
 			</div>
 		</div>
+		<nav class="secondary-nav active" role="navigation" aria-labeledby="secondarynavheading" >
+			<h2 class="sr-only" id="secondarynavheading">[section title] Navigation</h2>
+<!--			<div class="secondary-nav__options"><button class="pin">Pin menu open</button><button class="close">close menu</button></div>-->
+			<ul>
+				<li class="secondary-nav__item"><a href="#">page 1</a></li>
+				<li class="secondary-nav__item"><a href="#">page 2</a></li>
+				<li class="secondary-nav__item"><a href="#">page 3</a></li>
+				<li class="secondary-nav__item"><a href="#">page 4</a></li>
+				<li class="secondary-nav__item"><a href="#">page 5</a></li>
+				<li class="secondary-nav__item">
+					<a href="#">Page 1</a>
+					<ul class="secondary-nav__section active">
+						<li class="secondary-nav__item"><a href="#">sub page 1</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 2</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 3</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 4</a></li>
+					</ul>
+				</li>
+				<li class="secondary-nav__item"><a href="#">Page 2</a>
+					<ul class="secondary-nav__section hidden">
+						<li class="secondary-nav__item"><a href="#">sub page 1</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 2</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 3</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 4</a></li>
+					</ul>
+				</li>
+				<li class="secondary-nav__item"><a href="#">Page 3</a>
+					<ul class="secondary-nav__section hidden">
+						<li class="secondary-nav__item"><a href="#">sub page 1</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 2</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 3</a></li>
+						<li class="secondary-nav__item"><a href="#">sub page 4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 	</div>
+		
+	<script type="text/javascript">
+	$
+
+
+	</script>
 </body>
 </html>

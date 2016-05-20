@@ -6131,13 +6131,60 @@ body {
     opacity: 1;
     transition: all ease-in-out .5s;
     z-index: 10; }
+  .undergraduate .transition, .undergraduate .secondary-nav__section.hiding, .undergraduate .secondary-nav__section.showing {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .undergraduate .secondary-nav {
     display: block;
-    heigth: 100%;
+    height: 100%;
     width: 250px;
-    position: absolute;
+    position: fixed;
     left: -250px;
-    top: 0; }
+    top: 0;
+    color: #222222;
+    background-color: #ffffff;
+    border-right: 2px solid #cccccc;
+    z-index: 1000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: -15px 0px 75px #222222; }
+    .undergraduate .secondary-nav.active {
+      left: 0; }
+    .undergraduate .secondary-nav > ul {
+      padding: 0;
+      margin: 0; }
+      .undergraduate .secondary-nav > ul li {
+        list-style: none; }
+        .undergraduate .secondary-nav > ul li > a {
+          background-color: transparent;
+          color: #464646;
+          font-weight: light;
+          padding: .5em;
+          margin: 0;
+          border-bottom: solid 1px #cccccc;
+          display: block;
+          height: 100%;
+          width: 100%; }
+          .undergraduate .secondary-nav > ul li > a:hover {
+            background-color: #ffffff;
+            color: #0194d3; }
+    .undergraduate .secondary-nav__section {
+      padding: 0;
+      height: 0;
+      width: 100%;
+      display: none; }
+      .undergraduate .secondary-nav__section.hiding {
+        height: 0; }
+      .undergraduate .secondary-nav__section.showing {
+        height: auto; }
+      .undergraduate .secondary-nav__section.active {
+        display: block;
+        height: auto;
+        background-color: #eeeeee; }
+        .undergraduate .secondary-nav__section.active > li > a {
+          color: #b42e34;
+          padding-left: 1em; }
   .undergraduate .carousel-indicators {
     bottom: -40px; }
     .undergraduate .carousel-indicators li {
