@@ -321,16 +321,16 @@ body {
     color: #b42e34;
     border-color: #b42e34; }
 
-.majors {
+.cards {
   margin: auto;
   float: none;
   width: auto; }
-  .majors__list {
+  .cards__list {
     display: block;
     max-width: 870px;
     margin: auto;
     padding: 0; }
-  .majors__major {
+  .cards__card {
     height: 250px;
     width: 250px;
     background-color: #b42e34;
@@ -346,20 +346,20 @@ body {
     /* Chrome, Safari, Opera */
     filter: grayscale(100%);
     transition: all .3s ease-in-out; }
-    .majors__major:hover {
+    .cards__card:hover {
       -webkit-filter: none;
       filter: none; }
-    @media screen and (max-width: 764px) {
-      .majors__major {
+    @media screen and (max-width: 768px) {
+      .cards__card {
         background: none;
         height: auto;
         width: 49%;
         display: inline-block;
         margin: 0; } }
-  .majors__image {
+  .cards__image {
     border-radius: 4px;
     transition: all .3s ease-in-out; }
-    .majors__image:hover {
+    .cards__image:hover {
       -webkit-transform: scale(1.25);
       /* Safari and Chrome */
       -moz-transform: scale(1.25);
@@ -369,22 +369,22 @@ body {
       -o-transform: scale(1.25);
       /* Opera */
       transform: scale(1.25); }
-    @media screen and (max-width: 764px) {
-      .majors__image {
+    @media screen and (max-width: 768px) {
+      .cards__image {
         display: none; } }
-  .majors__caption {
+  .cards__caption {
     color: #ffffff;
     text-align: center;
     position: absolute;
     border-radius: 4px;
+    margin: 0;
     bottom: 0;
     padding: 14px;
     background: rgba(0, 0, 0, 0.4);
     display: block;
-    width: 250px;
-    height: 50px; }
-    @media screen and (max-width: 764px) {
-      .majors__caption {
+    width: 250px; }
+    @media screen and (max-width: 768px) {
+      .cards__caption {
         color: #7d7d7d;
         position: relative;
         background: none;
@@ -506,7 +506,7 @@ body {
     border-left: 1px solid lightgrey;
     position: absolute;
     top: 0;
-    left: -40px; }
+    left: -30px; }
     @media screen and (max-width: 1199px) {
       .events__divider {
         display: none; } }
@@ -520,10 +520,10 @@ body {
   text-align: center;
   margin-top: 10px;
   font-size: 1.3em;
-  width: 33%; }
-  @media screen and (max-width: 764px) {
+  width: 32%; }
+  @media screen and (max-width: 768px) {
     .careers__career {
-      font-size: .8em;
+      font-size: 1em;
       width: 49%; } }
 .careers__link {
   text-decoration: none;
