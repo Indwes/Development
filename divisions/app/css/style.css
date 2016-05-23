@@ -6197,12 +6197,12 @@ body {
     z-index: 1000;
     overflow-y: scroll;
     overflow-x: hidden;
-    box-shadow: 0px 0px 75px #222222;
     border-radius: 3px;
     position: fixed;
     left: -250px; }
     .undergraduate .secondary-nav.active {
-      left: 0; }
+      left: 0;
+      box-shadow: 0px 0px 75px #222222; }
     @media screen and (min-width: 1440px) {
       .undergraduate .secondary-nav.sticky {
         box-shadow: none;
