@@ -1,0 +1,60 @@
+.corporate-nav{
+		a{
+			display: block;
+			width:100%;
+			height: 100%;
+		}
+		@at-root #{&}__corporate {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		//order-radius: 0 0 5px 5px;
+		height:30px;
+		line-height: 30px;
+		padding:0;
+		background-color: $IWU_Red;
+		text-align: Center;
+		font-size:14px;
+		a{
+			&:hover{
+				text-decoration: unerline;
+				color: $white--dark;
+			}
+			color: $white;
+			
+		}
+	}
+	@at-root #{&}__res, #{&}__nres{
+		height:30px;
+		line-height: 30px;
+		font-size:10px;
+		text-align: center;	
+		padding:  0;
+		&:hover{
+			background-color: $gray;
+			a{
+				color: $white;
+			}
+		}
+		a{
+			color: $IWU_UG_Red;
+		}
+	}
+	@at-root #{&}__res{
+		&:hover{
+			background-color: $IWU_UG_Red;
+		}
+	}
+	@at-root #{&}__nres{
+		&:hover{
+			background-color: $IWU_Blue;
+		}
+	}
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1;
+	background-color: transparent;
+	border-bottom: solid 2px $white--dark;
+	overflow:hidden;
+	margin-bottom:0;
+}
