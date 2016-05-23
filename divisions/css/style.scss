@@ -1,4 +1,4 @@
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
 @import 'variables';
 
@@ -23,7 +23,7 @@ body {
 	margin:auto;
 	.container{
 		float:right;
-		width:calc(100% - 250px)
+		width:calc(100% - 250px);
 	}
 	nav{
 		float:left;
