@@ -1,4 +1,4 @@
-@import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
 @import 'variables';
 
@@ -18,6 +18,17 @@ body {
 @import 'department-LP-styles';
 @import 'footer';
 @import 'video-wrapper';
+.wrapper{
+	position:relative;
+	margin:auto;
+	.container{
+		float:right;
+		width:calc(100% - 250px)
+	}
+	nav{
+		float:left;
+	}
+}
 }
 
 
