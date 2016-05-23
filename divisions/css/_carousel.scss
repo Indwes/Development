@@ -29,10 +29,19 @@
 		background-image: none;
 	}
 }
-.item {
 
-	min-height: 400px;
+.carousel-inner {
+	margin-bottom: 1.5em;
+}
 
+.carousel .item {
+	margin-bottom: 0;
+	background-size: cover; 
+	background-position: center;
+	height: 400px;
+	@media screen and (max-width: 414px) {
+		height: 300px;
+	}
 	> img {
 		@extend %extend_3;
 	}

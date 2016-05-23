@@ -1,4 +1,4 @@
-.majors {
+.cards {
 	margin: auto;
 	float: none;
 	width: auto;
@@ -8,7 +8,7 @@
 		margin: auto;
 		padding: 0;
 	}
-	@at-root #{&}__major {
+	@at-root #{&}__card {
 		height: 250px;
 		width: 250px;
 		background-color: $IWU_UG_Red;
@@ -27,7 +27,7 @@
 		-webkit-filter: none;
 		filter: none;
 		}
-		@media screen and (max-width: 764px) {
+		@media screen and (max-width: 768px) {
 
 			background: none;
 			height: auto;
@@ -50,7 +50,7 @@
 		     transform:scale(1.25);
 
 		}
-		@media screen and (max-width: 764px) {
+		@media screen and (max-width: 768px) {
 			display: none;
 		}
 	}
@@ -59,13 +59,13 @@
 		text-align: center;
 		position: absolute;
 		border-radius: 4px;
+		margin: 0;
 		bottom: 0;
 		padding: 14px;
 		background: $black--opaque;
 		display: block;
 		width: 250px;
-		height: 50px;
-		@media screen and (max-width: 764px) {
+		@media screen and (max-width: 768px) {
 			color: $gray;
 			position: relative;
 			background: none;
@@ -80,15 +80,7 @@
 .navbar ul.nav:not(.dropdown) > li > a:hover {
 	padding-top: 55px;
 }
-.carousel .item {
-	margin-bottom: 0;
-	max-height: 400px;
-	background-color: $white;
-}
 
-.carousel-inner {
-	margin-bottom: 1.5em;
-}
 
 // SCSS non generated //
 
@@ -157,8 +149,11 @@
 	}
 	@at-root #{&}__item {
 	}
+	@at-root #{&}__link {
+		display: block;
+	}
 	@at-root #{&}__img {
-		width: 300px;
+		max-width: 100%;
 		border-radius: 4px;	
 	}
 	@at-root #{&}__title{
@@ -226,7 +221,7 @@
 		width: 1px;
 		border-left: 1px solid lightgrey;
 		position: absolute;
-		top: 0;
+		top: 25px;
 		left: -40px;
 		@media screen and (max-width: 1199px) {
 			display: none;
@@ -247,7 +242,7 @@
 		text-align: center;
 		margin-top: 10px;
 		font-size: 1.3em;
-		width: 33%;
+		width: 32%;
 		@media screen and (max-width: 764px) {
 			font-size: .8em;
 			width: 49%;
