@@ -1,6 +1,6 @@
 
 	.navbar-default {
-		background-color: $white !important;
+		background-color: $white;
 		background-image: none;
 		border: none;
 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -34,12 +34,12 @@
 						transition: .75s;
 					}
 				}
-				&.active, &.open {
-					display: block;
-					height: 100%;
-					> a {
-						background-color: $white--dark;
-						color: $gray;
+				&.active, &.open {				
+					
+						display: block;
+						height: 100%;
+						> a {color: $white;
+						text-decoration: none;
 						&:hover:not(.btn) {
 							color: $white;
 							text-decoration: underline;

@@ -15,20 +15,10 @@ body {
 @import 'undergrad-nav';
 @import 'secondary-nav';
 @import 'carousel';
+@import 'video-wrapper';
 @import 'department-LP-styles';
 @import 'footer';
-@import 'video-wrapper';
-.wrapper{
-	position:relative;
-	margin:auto;
-	.container{
-		float:right;
-		width:calc(100% - 250px);
-	}
-	nav{
-		float:left;
-	}
-}
+
 }
 
 
