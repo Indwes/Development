@@ -35,10 +35,10 @@
 					}
 				}
 				&.active, &.open {				
-					> a {
+					
 						display: block;
 						height: 100%;
-						color: $white;
+						> a {color: $white;
 						text-decoration: none;
 						&:hover:not(.btn) {
 							color: $white;
