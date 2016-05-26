@@ -38,6 +38,7 @@
 					
 						display: block;
 						height: 100%;
+						color: $white;
 						> a {color: $white;
 						text-decoration: none;
 						&:hover:not(.btn) {
