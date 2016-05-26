@@ -5945,7 +5945,8 @@ body {
         transition: .75s; }
       .undergraduate .navbar-default ul li.active, .undergraduate .navbar-default ul li.open {
         display: block;
-        height: 100%; }
+        height: 100%;
+        color: #ffffff; }
         .undergraduate .navbar-default ul li.active > a, .undergraduate .navbar-default ul li.open > a {
           color: #ffffff;
           text-decoration: none; }
