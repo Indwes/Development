@@ -8275,6 +8275,235 @@ body {
 @media screen and (min-width: 1440px) {
   .undergraduate .secondary-nav.sticky {
     box-shadow: none;
+<<<<<<< HEAD
+    z-index: 3; }
+    .undergraduate .navbar-default ul li {
+      position: static; }
+      .undergraduate .navbar-default ul li > a:hover {
+        background-color: #eeeeee;
+        color: #7d7d7d; }
+        .undergraduate .navbar-default ul li > a:hover:not(.btn) {
+          text-decoration: none;
+          color: #ffffff;
+          transition: .5s;
+          background-image: none; }
+      .undergraduate .navbar-default ul li > a:not(.btn) {
+        color: #7d7d7d;
+        text-decoration: none;
+        padding: inherit 1em;
+        position: relative;
+        bottom: 0;
+        text-transform: uppercase;
+        font-family: proxima-nova-extrabold, proxima-nova, Arial;
+        font-weight: bold;
+        transition: .75s; }
+      .undergraduate .navbar-default ul li.active, .undergraduate .navbar-default ul li.open {
+        display: block;
+        height: 100%;
+        color: #ffffff; }
+        .undergraduate .navbar-default ul li.active > a, .undergraduate .navbar-default ul li.open > a {
+          color: #ffffff;
+          text-decoration: none; }
+          .undergraduate .navbar-default ul li.active > a:hover:not(.btn), .undergraduate .navbar-default ul li.open > a:hover:not(.btn) {
+            color: #ffffff;
+            text-decoration: underline; }
+      .undergraduate .navbar-default ul li.Majors.open > a, .undergraduate .navbar-default ul li.Majors.active > a {
+        background-color: #b42e34; }
+      .undergraduate .navbar-default ul li.Majors a:hover {
+        background-color: #b42e34; }
+      .undergraduate .navbar-default ul li.Admissions.active > a {
+        background-color: #b42e34; }
+      .undergraduate .navbar-default ul li.Admissions > a:hover {
+        background-color: #b42e34; }
+      .undergraduate .navbar-default ul li.FinAid.active > a {
+        background-color: #0194d3; }
+      .undergraduate .navbar-default ul li.FinAid > a:hover {
+        background-color: #0194d3; }
+      .undergraduate .navbar-default ul li.IWULife.active > a {
+        background-color: #5c8727; }
+      .undergraduate .navbar-default ul li.IWULife > a:hover {
+        background-color: #5c8727; }
+    .undergraduate .navbar-default .navbar-brand img {
+      display: block; }
+  .undergraduate .navbar {
+    margin-top: 2em; }
+    .undergraduate .navbar .nav {
+      margin-top: 30px;
+      height: 89px; }
+      .undergraduate .navbar .nav > .nav-divider {
+        border: solid 0 #cccccc;
+        width: 1px;
+        height: 3em;
+        display: block;
+        margin: 0 .5em;
+        content: "\&nbsp"; }
+    .undergraduate .navbar .container {
+      position: relative; }
+  .undergraduate .dropdown-menu.container {
+    position: absolute; }
+  .undergraduate .dropdown-menu ul {
+    margin: 0;
+    padding: 0; }
+    .undergraduate .dropdown-menu ul li a {
+      display: block;
+      padding: .35em .75em;
+      clear: both;
+      line-height: 1.42857143;
+      white-space: nowrap; }
+  .undergraduate .dropdown-menu li {
+    list-style-type: none; }
+  .undergraduate .dropdown-menu > li.Admissions a:hover {
+    background-color: #b42e34; }
+  .undergraduate .navbar-apply {
+    margin-top: 34px;
+    margin-left: 10px; }
+    .undergraduate .navbar-apply a {
+      display: block;
+      text-transform: uppercase;
+      padding: .35em 2em .25em 1em;
+      background-color: #b42e34;
+      border-radius: 3px;
+      text-decoration: none;
+      border-bottom: 6px #9a0323 solid;
+      transition: 1.5s;
+      color: #ffffff; }
+      .undergraduate .navbar-apply a:hover {
+        color: #ffffff;
+        background: #9a0323;
+        text-decoration: none;
+        border-bottom: 3px #b42e34 solid;
+        box-shadow: inset 0 -5px 0.5em #b42e34;
+        transition: 1.5s; }
+        .undergraduate .navbar-apply a:hover .fa {
+          color: #b42e34 !important; }
+          .undergraduate .navbar-apply a:hover .fa:after {
+            font-family: FontAwesome;
+            content: '\f00c';
+            transition: .5s;
+            color: #ffffff; }
+    .undergraduate .navbar-apply .fa {
+      position: absolute;
+      top: .35em;
+      right: .5em;
+      font-size: 1.15em;
+      transition: 1.5s; }
+      .undergraduate .navbar-apply .fa:after {
+        top: .275em;
+        right: .15em;
+        color: #b42e34;
+        font-size: .65em;
+        position: absolute;
+        content: '\f00c';
+        font-family: FontAwesome; }
+    .undergraduate .navbar-apply:hover span.fa {
+      transform: rotate(-360deg);
+      transition: 1.5s; }
+  .undergraduate .navbar-form {
+    margin: 38px 3em 0; }
+    .undergraduate .navbar-form input.form-control {
+      border: none;
+      border-radius: 0 !important;
+      padding-top: .25em;
+      padding-bottom: .25em;
+      line-height: 18px;
+      font-size: 1em;
+      background-color: #eeeeee;
+      color: #7d7d7d;
+      height: auto;
+      width: 10em; }
+      .undergraduate .navbar-form input.form-control:-moz-placeholder {
+        color: #7d7d7d;
+        opacity: 1; }
+      .undergraduate .navbar-form input.form-control:-ms-input-placeholder {
+        color: #7d7d7d; }
+      .undergraduate .navbar-form input.form-control:placeholder-shown {
+        color: #7d7d7d; }
+    .undergraduate .navbar-form input.form-control::-webkit-input-placeholder {
+      color: #7d7d7d; }
+    .undergraduate .navbar-form input.form-control::-moz-placeholder {
+      color: #7d7d7d;
+      opacity: 1; }
+    .undergraduate .navbar-form button.btn-go {
+      color: #b42e34;
+      background: none;
+      border: none;
+      transition: .5s; }
+      .undergraduate .navbar-form button.btn-go:hover {
+        color: #7d7d7d;
+        transition: .5s;
+        transform: rotate(45deg); }
+  .undergraduate .navbar-brand {
+    height: auto;
+    margin-right: 2em; }
+  .undergraduate a.unstyled {
+    text-decoration: none; }
+  .undergraduate a:hover.unstyled {
+    color: inherit;
+    text-decoration: underline; }
+  .undergraduate .menuUnderlay {
+    opacity: 1;
+    z-index: -1;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: .5s; }
+  .undergraduate .navbar-quicklinks {
+    position: absolute;
+    top: 0;
+    margin-top: -2em;
+    right: 16.6%;
+    display: block;
+    width: auto;
+    height: auto; }
+    .undergraduate .navbar-quicklinks ul.nav-quicklinks li.active > a {
+      padding: 0.5em 1em !important;
+      background-color: #b42e34; }
+    .undergraduate .navbar-quicklinks ul.nav-quicklinks li > a:hover {
+      padding: 0.5em 1em !important;
+      background-color: #b42e34;
+      padding: 0.5em 1em !important;
+      background-color: #b42e34; }
+    .undergraduate .navbar-quicklinks .nav.nav-quicklinks {
+      position: relative;
+      height: auto;
+      margin-top: 0; }
+  .undergraduate li .dropdown-menu > li a:hover {
+    background-color: #eeeeee;
+    color: #7d7d7d; }
+  .undergraduate .Majors .dropdown-menu li a:hover {
+    background-color: #b42e34; }
+  .undergraduate .FinAid .dropdown-menu li a:hover {
+    background-color: #0194d3; }
+  .undergraduate .IWULife .dropdown-menu li a:hover {
+    background-color: #5c8727; }
+  .undergraduate .opaque--light .menuUnderlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: block;
+    opacity: .80;
+    background-color: #000000;
+    z-index: 2;
+    transition: .5s; }
+  .undergraduate ul.nav.nav-quicklinks li a {
+    padding: 0.5em 1em !important;
+    font-size: 8pt; }
+    .undergraduate ul.nav.nav-quicklinks li a:hover {
+      padding: 0.5em 1em !important;
+      font-size: 8pt; }
+  .undergraduate .indwes-footer hr {
+    border-color: #7d7d7d !important;
+    margin: 2em auto 0;
+    text-align: center; }
+  .undergraduate .content > .container > .row {
+    margin-bottom: 3em; }
+  .undergraduate .content > .container-fluid > .row {
+    margin-bottom: 3em; }
+  .undergraduate .dropdown li.dropdown ul {
+=======
+>>>>>>> 0193c435cac3c4c44092b38f3d426ea652ee2a08
     position: absolute;
     left: -250px;
     height: 100%;
