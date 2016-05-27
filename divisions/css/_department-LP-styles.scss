@@ -1,3 +1,14 @@
+.container-fluid {
+    padding: 0px;
+}
+
+@media (max-width: 797px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 .cards {
 	margin: auto;
 	float: none;
@@ -7,6 +18,15 @@
 		max-width: 870px;
 		margin: auto;
 		padding: 0;
+		&:after {
+		    display: block;
+		    content: "";
+		    clear: both;
+		}	
+		@media screen and (max-width: 991px) {
+			max-width: 580px;
+		}
+
 	}
 	@at-root #{&}__card {
 		height: 250px;
@@ -31,7 +51,7 @@
 
 			background: none;
 			height: auto;
-			width: 49%;
+			width: 100%;
 			display: inline-block;
 			margin: 0;
 
@@ -71,9 +91,11 @@
 			background: none;
 			height: auto;
 			width: 100%;
+			font-size: 1.1em;
+		    border-bottom: 1px solid #eaeaea;
+		    border-radius: 0;
 		}
 	}
-		
 	
 }
 
@@ -187,11 +209,17 @@
 		margin-top: 15px;
 		color: #acacac;
 		font-size: 1.2em;
+		@media screen and (max-width: 764px) {
+			text-align: center;
+		}
 
 	}	
 	@at-root #{&}__time {
 		color: #acacac;
 		font-size: 1.2em;
+		@media screen and (max-width: 764px) {
+			text-align: center;
+		}
 	}
 	@at-root #{&}__date {
 		padding: 0;
@@ -244,8 +272,8 @@
 		font-size: 1.3em;
 		width: 32%;
 		@media screen and (max-width: 764px) {
-			font-size: .8em;
-			width: 49%;
+			
+			width: 100%;
 		}
 
 	}
