@@ -198,7 +198,7 @@
 		padding: 0;
 	}
 	@at-root #{&}__item {
-		padding: 0;
+		padding: 0 75px 0 0;
 	}
 	@at-root #{&}__link {
 		display: block;
@@ -206,6 +206,7 @@
 	@at-root #{&}__img {
 		max-width: 100%;
 		border-radius: 4px;	
+		height: 233px;
 	}
 	@at-root #{&}__title{
 		font-size: 1.5em;
