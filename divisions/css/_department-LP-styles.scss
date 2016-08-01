@@ -88,6 +88,90 @@
 	
 }
 
+.faculty {
+	margin: auto;
+	float: none;
+	width: auto;
+	@at-root #{&}__list {
+		display: block;
+		max-width: 870px;
+		margin: auto;
+		padding: 0;
+		&:after {
+		    display: block;
+		    content: "";
+		    clear: both;
+		}	
+		@media screen and (max-width: 991px) {
+			max-width: 580px;
+		}
+
+	}
+	@at-root #{&}__card {
+		height: 235px;
+		width: 177px;
+		background-color: $gray--ultralight;
+		color: $white;
+		border-radius: 4px;
+		list-style: none;
+		text-align: center;
+		margin: 20px;
+		display: block;
+		float: left;
+		position: relative;
+		overflow: hidden;
+		opacity: 1;
+		transition: all .2s ease-in-out;
+		&:hover {
+			opacity: .9;
+			border-bottom: 6px solid $IWU_Red;
+		}
+		@media screen and (max-width: 768px) {
+
+			background: none;
+			height: auto;
+			width: 100%;
+			display: inline-block;
+			margin: 0;
+
+		}
+	}
+	@at-root #{&}__image {
+
+		border-radius: 4px;
+		margin: 15px 0;
+		width: 120px;
+		border-radius: 60px;
+
+		// @media screen and (max-width: 768px) {
+		// 	display: none;
+		// }
+	}
+	@at-root #{&}__caption {
+		color: $gray;
+		text-align: center;
+		border-radius: 4px;
+		margin: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		// @media screen and (max-width: 768px) {
+		// 	color: $gray;
+		// 	position: relative;
+		// 	background: none;
+		// 	height: auto;
+		// 	width: 100%;
+		// 	font-size: 1.1em;
+		//     border-bottom: 1px solid #eaeaea;
+		//     border-radius: 0;
+		// }
+	}
+	@at-root #{&}__title {
+		color: $gray--light;
+	}
+	
+}
+
 .navbar ul.nav:not(.dropdown) > li > a:hover {
 	padding-top: 55px;
 }
@@ -312,62 +396,6 @@
 		color: $gray;
 
 	}
-}
-
-
-.faculty {
-
-
-	@at-root #{&}__grid {
-
-		margin: 0 auto;
-
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
-		} 
-
-	} 
-	@at-root #{&}__sizer {
-		width: 25%;
-	}
-	@at-root #{&}__caption {
-		width: 100%;
-		display: block;
-		height: 65px;
-		color: $white;
-		text-align: center;
-		background: $black--opaque;
-		position: absolute;
-		bottom: 0;
-		line-height: 18px;
-
-	}
-	@at-root #{&}__name {
-		font-size:1.2em;
-		margin-top: 15px;
-	}
-	@at-root #{&}__title {
-		font-size: .9em;
-	}	
-	@at-root #{&}__profile {
-		width: 25%;
-		float: left;
-		height: 225px;
-		text-decoration: none;
-		background-size: cover;
-		background-image: url('http://lorempixel.com/450/450/people');
-		background-position: center;
-		border: 5px solid $white;
-		border-radius: 7px;
-	}
-	@at-root #{&}__profile--width2 { width: 50%; }
-	@at-root #{&}__profile--height2 { height: 450px; }
-	@at-root #{&}__image {
-		max-height: 100%;
-	}
-
 }
 
 .sub-footer {
